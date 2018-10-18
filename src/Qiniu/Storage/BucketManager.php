@@ -44,6 +44,9 @@ final class BucketManager
     public function mkbucketv2($bucket_name, $region = '')
     {
         $path = '/mkbucketv2/' . base64_encode($bucket_name);
+        if($region){
+            $path .= '/region/'.$region;
+        }
         list(, $error) = $this->rsPost($path);
 
         return $error;

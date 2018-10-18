@@ -1,4 +1,16 @@
 # Qiniu Cloud SDK for PHP
+
+```
+使用时更改引入路径为fyflzjz\Qiniu
+例：
+	将 		use Qiniu\Storage\UploadManager;
+	更改为	   use fyflzjz\Qiniu\Storage\UploadManager;
+```
+```
+增加一些官方sdk没有封装的方法
+1.mkbucketv2(创建 Bucket)
+```
+
 [![doxygen.io](http://doxygen.io/github.com/qiniu/php-sdk/?status.svg)](http://doxygen.io/github.com/qiniu/php-sdk/)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/qiniu/php-sdk.svg)](https://travis-ci.org/qiniu/php-sdk)
@@ -13,7 +25,7 @@
 
 * 通过composer，这是推荐的方式，可以使用composer.json 声明依赖，或者运行下面的命令。SDK 包已经放到这里 [`qiniu/php-sdk`][install-packagist] 。
 ```bash
-$ composer require qiniu/php-sdk
+$ composer require fyflzjz/qiniu-php-sdk
 ```
 * 直接下载安装，SDK 没有依赖其他第三方库，但需要参照 composer的autoloader，增加一个自己的autoloader程序。
 
